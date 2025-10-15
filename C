@@ -1,0 +1,51 @@
+```python
+
+Welcome message
+
+("Welcome to Package Express. Please follow the instructions below.")
+
+ 
+
+Ask for package weight
+
+weight = float(input("Please enter the package weight: "))
+
+ 
+
+Check if weight exceeds limit
+
+if weight > 50:
+
+    print("Package too heavy to be shipped via Package Express. Have a good day.")
+
+else:
+
+    # Ask for package dimensions
+
+    width = float(input("Please enter the package width: "))
+
+    height = float(input("Please enter the package height: "))
+
+    length = float(input("Please enter the package length: "))
+
+ 
+
+    # Check if total dimensions exceed limit
+
+    if width + height + length > 50:
+
+        print("Package too big to be shipped via Package Express.")
+
+    else:
+
+        # Calculate the quote using the formula
+
+        quote = (width * height * length * weight) / 100
+
+        (f"Your estimated total for shipping this package is: ${quote:.2f}")
+
+        ("Thank you!")
+
+
+CHADY. STUCCO COMPANY
+ 
